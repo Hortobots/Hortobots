@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hortobots - HOME</title>
+
+<!-- Fonte moderna -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Estilo -->
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>HORTOBOTS</h1>
+      <img src="./img/AI__4_-removebg-preview.png" alt="Calango animado" class="calango-img" />
+    </div>
+  </header>
+  
+  
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" onchange="toggleDarkMode()">
+      <div class="slider-icon">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </div>
+    </label>
+  </div>
+  
+ 
+  
+  <nav>
+    <a href="teatro/index-teatro.html">🎭 Theater</a>
+    <a href="tecnico/index.html">🤖 Technical Section</a>
+  </nav>
+  
+  
+  <main>
+    <section class="sobre">
+      <div class="container">
+        <h2>Who Are We?</h2>
+        <p>We are a robotics team from SESI Hortolândia called Hortobots! With a focus on continuous learning and collaboration, we participate in OBR and Robocup Onstage, always ready to face new challenges.</p>
+      </div>
+    </section>
+    
+    
+    <section class="Hortobots">
+      <div class="container">
+        <div class="grupo-flip" onclick="flipGrupo()">
+          <div class="grupo-inner" id="grupoCard">
+            <div class="grupo-front">
+              <img src="./img/hortobots.jpeg" alt="Foto da equipe Hortobots" class="img-em-grupo" />
+            </div>
+            <div class="grupo-back">
+              <video class="video-grupo" src="./img/animação hortobots.mp4" muted loop></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="integrantes">
+      <div class="container">
+        <h2>Members</h2>
+        <div class="grid-membros">
+          <article class="team-member">
+            <div class="profile-wrapper">
+              <div class="flip-card">
+                <div class="front">
+                  <img src="./img/Queiroz.jpeg" alt="Foto Queiroz">
+                </div>
+                <div class="back">
+                  <video class="team-animation" muted loop>
+                    <source src="./img/animação queiroz.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <h3 class="team-member-name" onclick="flip(this)">Nycolas Queiroz</h3>
+            <p class="team-member-info">Captain and programmer, aka “Freelance programmer”.</p>
+          </article>
+  
+          <article class="team-member">
+            <div class="profile-wrapper">
+              <div class="flip-card">
+                <div class="front">
+                  <img src="./img/Tiago.jpeg" alt="Foto Tiago">
+                </div>
+                <div class="back">
+                  <video class="team-animation" muted loop>
+                    <source src="./img/animaçãoTiago.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <h3 class="team-member-name" onclick="flip(this)">Tiago Ferreira</h3>
+            <p class="team-member-info">Screenwriter, aka “Codey F. Stack McLane”.</p>
+          </article>
+          
+          <article class="team-member">
+            <div class="profile-wrapper">
+              <div class="flip-card">
+                <div class="front">
+                  <img src="./img/Luiz.jpeg" alt="Foto Luiz">
+                </div>
+                <div class="back">
+                  <video class="team-animation" muted loop>
+                    <source src="./img/animaçãoluiz.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <h3 class="team-member-name" onclick="flip(this)">Luiz Otavio</h3>
+            <p class="team-member-info">Designer, aka “Office programmer”.</p>
+          </article>
+          
+          <article class="team-member">
+            <div class="profile-wrapper">
+              <div class="flip-card">
+                <div class="front">
+                  <img src="./img/Paiva.jpeg" alt="Foto Nicolas">
+                </div>
+                <div class="back">
+                  <video class="team-animation" muted loop>
+                    <source src="./img/paivaanimação.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <h3 class="team-member-name" onclick="flip(this)">Nicolas Paiva</h3>
+            <p class="team-member-info">Set designer, aka “Remote programmer”.</p>
+          </article>
+          
+          <article class="team-member">
+            <div class="profile-wrapper">
+              <div class="flip-card">
+                <div class="front">
+                  <img src="./img/Everaldo.jpeg" alt="Foto Everaldo">
+                </div>
+                <div class="back">
+                  <video class="team-animation" muted loop>
+                    <source src="./img/anamação Everaldo.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <h3 class="team-member-name" onclick="flip(this)">Everaldo Leal</h3>
+            <p class="team-member-info">The team coach, and a big fan of McDonald's.</p>
+          </article>
+          
+  
+        </div>
+      </div>
+    </section>
+  </main>
+  
+<footer>
+  <div class="footer-content">
+    <img src="./img/logo.svg" alt="Logo Esquerda" class="footer-logo logo-esquerda" />
+    <div class="footer-text">
+      <p>© 2025 Robotics Team - All rights reserved</p>
+    </div>
+    <img src="./img/sesi-logo.svg" alt="Logo Direita" class="footer-logo logo-direita" />
+  </div>
+</footer>
+
+
+  
+  <script>
+    function flip(element) {
+      const card = element.previousElementSibling.querySelector('.flip-card');
+      card.classList.toggle('flipped');
+      const video = card.querySelector('video');
+      if (card.classList.contains('flipped')) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+      document.body.classList.add('dark-mode');
+      document.querySelector('.theme-switch input').checked = true;
+    }
+  
+    document.querySelector('.theme-switch input').addEventListener('change', () => {
+      if (event.target.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+
+    
+  function flipGrupo() {
+    const flip = document.querySelector('.grupo-flip');
+    const video = flip.querySelector('video');
+    flip.classList.toggle('flipped');
+
+    if (flip.classList.contains('flipped')) {
+      video.play();
+    } else {
+      video.pause();
+      video.currentTime = 0;
+    }
+  }
+
+  </script>
+  
+  </body>
+  </html>
+  

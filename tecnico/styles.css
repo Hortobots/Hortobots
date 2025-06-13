@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+/* ===== RESET E VARIÁVEIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-gradient: linear-gradient(135deg, #0a0a0a, #1a1a1a, #220011);
+    --container-bg: radial-gradient(circle at top left, #1f1f1f, #0d0d0d);
+    --card-border: #ff0040;
+    --accent: #ff0040;
+    --text-light: #f0f0f0;
+    --text-accent: #ff0040;
+    --hover-glow: 0 0 10px #c00030;
+
+    --shadow-small: 0 0 8px #ff004022;
+    --shadow-medium: 0 0 15px #ff004044;
+    --shadow-hover: 0 0 20px #ff004088;
+
+    --transition: 0.3s ease;
+}
+
+/* ===== LIGHT MODE ===== */
+html.light {
+    --bg-dark: #f9f9f9;
+    --bg-gradient: linear-gradient(135deg, #ffffff, #f0f0f0);
+    --container-bg: #ffffff;
+    --card-border: #cc0022;
+    --accent: #cc0022;
+    --text-light: #222;
+    --text-accent: #cc0022;
+    --hover-glow: 0 0 8px #cc002244;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-light);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 2rem 1rem  1rem;
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+    border-bottom: 2px solid var(--card-border);
+}
+
+html.light header {
+    background: linear-gradient(90deg, #c53232, #ff8080);
+}
+
+html.dark header {
+    background: linear-gradient(90deg, #1a1a1a, #220011, #1a1a1a);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--text-accent);
+    text-shadow: 0 0 10px #ff004066;
+}
+
+header h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: inset 0 0 10px #ff004033;
+}
+
+nav a {
+    color: #c2b7b7;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    background-color: transparent;
+    border: 1px solid var(--text-accent);
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all var(--transition);
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--text-accent);
+    color: #000;
+    box-shadow: var(--hover-glow);
+    outline: none;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    padding: clamp(1rem, 5vw, 3rem);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-accent);
+    font-size: 2.2rem;
+    text-shadow: 0 0 5px rgba(255, 0, 64, 0.3);
+}
+
+/* ===== CARDS / CONTAINERS ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--container-bg);
+    border: 2px solid rgba(255, 0, 64, 0.4);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-small);
+    transition: var(--transition);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--text-accent);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px rgba(255, 0, 64, 0.3);
+}
+
+/* ===== RECURSOS ===== */
+.recurso-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.recurso-box .box {
+    background: var(--container-bg);
+    border: 2px solid rgba(255, 0, 64, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.recurso-box .box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.recurso-box .box h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* ===== TEAM MEMBERS ===== */
+.grid-membros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.team-member {
+    background: linear-gradient(145deg, #1b1b1b, #0f0f0f);
+    border: 2px solid rgba(255, 0, 64, 0.4);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow-small);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+.team-member-name {
+    color: var(--text-accent);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 0, 64, 0.3);
+}
+
+.team-member-info {
+    color: #ccc;
+}
+
+/* ===== FLIP CARD ===== */
+.flip-card {
+    width: 180px;
+    height: 180px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.flip-card .front,
+.flip-card .back {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+}
+
+.flip-card .front img,
+.flip-card .back video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card .front {
+    transform: rotateY(0);
+    z-index: 2;
+}
+
+.flip-card .back {
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.flip-card.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.flip-card.flipped .back {
+    transform: rotateY(0);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #1a1a1a;
+    color: var(--text-light);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo.sesi-logo {
+    height: 50px;
+}
+
+.footer-logo.hortobots-logo {
+    height: 200px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+
+/* ===== SWITCH ===== */
+.theme-switch-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.theme-switch {
+    display: inline-block;
+    width: 70px;
+    height: 38px;
+    position: relative;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-container .switch-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--bg-dark);
+    box-shadow: var(--shadow-hover);
+}
+
+.switch-container .switch-icon.sun {
+    background-color: #ffac33;
+    animation: spinAndPulse 2s infinite ease-in-out;
+}
+
+.switch-container .switch-icon.moon {
+    background-color: #444;
+    animation: spinAndPulse 2s infinite ease-in-out;
+}
+
+.slider-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, #1a1a1a, #333333);
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    font-size: 20px;
+    color: #ffcc00;
+    box-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe788;
+    border: 1px solid #00ffe7;
+    transition: background 0.4s ease;
+}
+
+.slider-icon .sun,
+.slider-icon .moon {
+    animation: popFade 0.4s ease;
+    transition: opacity 0.3s ease;
+}
+
+input:checked + .slider-icon {
+    background: linear-gradient(145deg, #000000, #1c1c1c);
+    box-shadow: 0 0 10px #ff0080, 0 0 20px #ff008088;
+    border: 1px solid #ff0080;
+}
+
+input:checked + .slider-icon .sun {
+    opacity: 0.2;
+    animation: spinAndPulse 0.6s ease;
+}
+
+input:not(:checked) + .slider-icon .moon {
+    opacity: 0.2;
+    animation: spinAndPulse 0.6s ease;
+}
+
+body.dark-mode input:checked + .slider-icon {
+    background-color: #888;
+}
+
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spinAndPulse {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg) scale(1.3);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popFade {
+    0% {
+        transform: scale(0.8) translateY(10px);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2) translateY(-4px);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  
+    .footer-logo.sesi-logo,
+    .footer-logo.hortobots-logo {
+      height: auto;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .footer-text {
+      text-align: center;
+      color: var(--text-accent);
+    }
+  }
+  

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EastWood Project - Theater</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>EastWood Project - Theater</h1>
+    </div>
+  </header>
+  
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox">
+      <div class="slider-icon">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </div>
+    </label>
+  </div>
+
+  <nav>
+    <a href="../index.html">🏠 Home</a>
+    <a href="../tecnico/index.html">🤖 Technical Part</a>
+  </nav>
+
+  <main>
+    <section class="sobre">
+      <div class="container">
+        <h2>About the Theater</h2>
+        <p>
+          Our theater project is called “EastWood,” a tribute to the Western genre that blends modern, creative, and educational elements.
+        </p>
+      </div>
+    </section>
+
+    <section class="integrantes">
+      <div class="container">
+        <h2>Characters</h2>
+        <div class="grid-membros">
+
+          <article class="team-member">
+            <img src="./img/Tiago.jpeg" alt="Codey McLane">
+            <h3 class="team-member-name">Codey "F. Stack" McLane, the cowboy</h3>
+            <p class="team-member-info">
+              <strong>Actor:</strong> Tiago F. Gregório<br>
+              <strong>Description:</strong> He’s inspired by classic Western characters like Clint Eastwood. He wears a cowboy hat, jeans, and a vest.
+            </p>
+          </article>
+
+          <article class="team-member">
+            <img src="./img/queiroz.jpeg" alt="Dexter Debugger">
+            <h3 class="team-member-name">Dexter "Debugger" Steele, the freelance programmer</h3>
+            <p class="team-member-info">
+              <strong>Actor:</strong> Nycolas Q. Gimenez<br>
+              <strong>Description:</strong> Brave and charismatic, he wears casual clothes and plays a humorous role.
+            </p>
+          </article>
+
+          <article class="team-member">
+            <img src="./img/Luiz.jpeg" alt="Carl Compile">
+            <h3 class="team-member-name">Carl "Compile" Johnson, the full-time programmer</h3>
+            <p class="team-member-info">
+              <strong>Actor:</strong> Luiz O. Siqueira<br>
+              <strong>Description:</strong> More serious and grounded. He wears a dress shirt, tie, and enjoys playing Minecraft.
+            </p>
+          </article>
+
+          <article class="team-member">
+            <img src="./img/Paiva.jpeg" alt="Logan M. Byte">
+            <h3 class="team-member-name">Logan M. Byte, the remote programmer</h3>
+            <p class="team-member-info">
+              <strong>Actor:</strong> Nicolas P. Medeiros<br>
+              <strong>Description:</strong> The comic relief. He wears a blue robe and pajamas, and enjoys playing Valorant.
+            </p>
+          </article>
+
+          <article class="team-member">
+            <img src="./img/WhatsApp Image 2025-04-11 at 20.54.43.jpeg" alt="Al B. Gorithm">
+            <h3 class="team-member-name">Al B. Gorithm</h3>
+            <p class="team-member-info">
+              <strong>Actor:</strong> Main robot<br>
+              <strong>Voice actress:</strong> Luana C. M. Pícolo<br>
+              <strong>Description:</strong> A robot equipped with a webcam and notebook, featuring two personalities: arrogant/dominant and humble/self-aware.
+            </p>  
+          </article>
+
+          <article class="team-member">
+            <img src="./img/WhatsApp Image 2025-04-11 at 20.54.42.jpeg" alt="Quezadilhas and Tar Foot">
+            <h3 class="team-member-name">Quezadilhas and Tar Foot</h3>
+            <p class="team-member-info">
+              <strong>Actor:</strong> Secondary robot<br>
+              <strong>Description:</strong> A LEGO mercenary lizard controlled by SPIKE. Plays a key role in the programmers’ liberation.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <footer>
+    <div class="footer-content">
+      <img src="../img/logo.svg" alt="Left Logo" class="footer-logo logo-esquerda" />
+      <div class="footer-text">
+        <p>© 2025 EastWood Project – All rights reserved</p>
+      </div>
+      <img src="../img/sesi-logo.svg" alt="Right Logo" class="footer-logo logo-direita" />
+    </div>
+  </footer>
+
+  <script>
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+      document.body.classList.add('dark-mode');
+      document.querySelector('.theme-switch input').checked = true;
+    }
+
+    document.querySelector('.theme-switch input').addEventListener('change', (event) => {
+      if (event.target.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Eastwood - SESI Hortobots</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" onchange="toggleTheme()">
+
+      <div class="slider-icon">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </div>
+    </label>
+  </div>
+
+
+
+
+  <header>
+    <h1>Eastwood Project</h1>
+    <h2>SESI Hortobots</h2>
+  </header>
+
+  <nav>
+    <a href="../index.html">Home🏠</a>
+    <a href="../teatro/index-teatro.html">Theater 🎭</a>
+
+
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to the Eastwood Project</h2>
+      <p>The presentation combines elements of comedy and creativity with the aim of representing a futuristic western
+        setting. This project was conceived and executed by the SESI Hortobots team with a focus on innovation and
+        educational entertainment.</p>
+    </section>
+
+    <section id="robos">
+      <h2>Our Robots</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Al Byte Gorithm</h3>
+          <p>Our main robot, inspired by western heroes, combines artificial intelligence with mechanical precision to
+            face challenges with style.</p>
+        </div>
+        <div class="card">
+          <h3>Quezadilhas</h3>
+          <p>Once again, Quezadilhas underwent more changes. This time, mounted on his black horse Brad Piche,
+             he follows a line using his reflectance sensors until he reaches another part of the scenario where,
+           by means of an ultrasonic sensor, 
+            he activates a robotic arm that pushes the prison and 'frees' the programmers in the story.</p>
+
+        </div>
+        <div class="card">
+          <h3>TNT trigger</h3>
+          <p>A robot representing a TNT trigger used in one of the scenes. It is theatrically activated to add excitement to the narrative.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos">
+      <h2>Resources Used</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Locomotion</h3>
+          <p>Both the main robot and the secondary robots use differential traction wheels to ensure
+            precision and maneuverability.</p>
+        </div>
+        <div class="card">
+          <h3>Internal Structure</h3>
+          <p>The robot's body was built using lightweight and durable materials, such as expanded PVC and aluminum sheets, aiming for both stability and practicality.</p>
+        </div>
+        <div class="card">
+          <h3>Code Development</h3>
+          <p>The code development involved multiple languages ​and approaches:</p>
+          <ul>
+            <li><strong>Python:</strong> Used for automatic sequences and dynamic behaviors.</li>
+            <li><strong>C/C++:</strong> Hardware control on Arduino.</li>
+            <li><strong>Integration:</strong> Serial communication between Python and Arduino for synchronization.</li>
+
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Autonomy and Battery</h3>
+          <p>Al Byte Gorithm is equipped with a lithium polymer battery that guarantees sufficient autonomy for the
+            entire presentation without needing to recharge.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Explanatory Technical Video</h2>
+      <p>Below is a technical video that details the operation, assembly, and programming logic behind our robots.</p>
+
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/2bO-ns-lPuQ" frameborder="0" allowfullscreen
+        title="Vídeo explicativo técnico sobre os robôs do projeto Eastwood">
+      </iframe>
+
+
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <!-- Logo à esquerda -->
+      <img src="./img/sesi-logo.svg" alt="Logo SESI" class="footer-logo sesi-logo" />
+
+      <!-- Texto centralizado -->
+      <p class="footer-text">© 2025 SESI Hortobots. All rights reserved.</p>
+
+      <!-- Logo à direita -->
+      <img src="./img/logo.svg" alt="Logo Hortobots" class="footer-logo hortobots-logo" />
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const switchContainer = document.querySelector('.switch-container');
+
+      if (html.classList.contains('light')) {
+        html.classList.remove('light');
+        html.classList.add('dark');
+        html.setAttribute('data-theme', 'dark');
+        switchContainer.classList.add('dark');
+        switchContainer.classList.remove('light');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.classList.remove('dark');
+        html.classList.add('light');
+        html.setAttribute('data-theme', 'light');
+        switchContainer.classList.add('light');
+        switchContainer.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    window.onload = function () {
+      const switchContainer = document.querySelector('.switch-container');
+
+      // Verifica se a URL contém "tecnica"
+      const isPaginaTecnica = window.location.pathname.includes('tecnica');
+
+      if (isPaginaTecnica) {
+        // Força o tema claro na página técnica
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+        document.documentElement.setAttribute('data-theme', 'light');
+        switchContainer.classList.add('light');
+        switchContainer.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+
+        // (Opcional) Desativa o botão de alternância
+        const checkbox = document.getElementById('checkbox');
+        if (checkbox) checkbox.checked = false;
+      } else {
+        // Carrega o tema salvo normalmente
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          document.documentElement.classList.add(savedTheme);
+          document.documentElement.setAttribute('data-theme', savedTheme);
+          switchContainer.classList.add(savedTheme);
+          switchContainer.classList.remove(savedTheme === 'dark' ? 'light' : 'dark');
+        } else {
+          document.documentElement.classList.add('light');
+          document.documentElement.setAttribute('data-theme', 'light');
+          switchContainer.classList.add('light');
+        }
+      }
+    };
+
+  </script>
+
+</body>
+
+</html>
