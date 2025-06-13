@@ -383,16 +383,16 @@ body {
   .team-member img {
     width: 120px;
     height: 120px;
-    border-radius: 50%; /* mantém circular */
+    border-radius: 50%; /* formato circular */
     object-fit: cover;
+    object-position: top center; /* <-- foco no topo da imagem */
     margin: 0 auto 1rem;
     display: block;
   }
-  
+
   .team-member {
     padding: 1rem 0.5rem;
   }
 }
-
 
     
