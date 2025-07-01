@@ -449,3 +449,23 @@ body.dark-mode input:checked + .slider-icon {
     }
   }
   
+  .video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.video-item {
+  flex: 1 1 450px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.video-item h3 {
+  color: var(--text-accent);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-shadow: 0 0 5px rgba(255, 0, 64, 0.3);
+}
