@@ -151,39 +151,43 @@
       }
     }
 
-    window.onload = function () {
-      const switchContainer = document.querySelector('.switch-container');
+   window.onload = function () {
+  const switchContainer = document.querySelector('.switch-container');
 
-      // Verifica se a URL contém "tecnica"
-      const isPaginaTecnica = window.location.pathname.includes('tecnica');
+  const isPaginaTecnica = window.location.pathname.includes('tecnica');
 
-      if (isPaginaTecnica) {
-        // Força o tema claro na página técnica
-        document.documentElement.classList.add('light');
-        document.documentElement.classList.remove('dark');
-        document.documentElement.setAttribute('data-theme', 'light');
-        switchContainer.classList.add('light');
-        switchContainer.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
+  if (isPaginaTecnica) {
+    document.documentElement.classList.add('light');
+    document.documentElement.classList.remove('dark');
+    document.documentElement.setAttribute('data-theme', 'light');
 
-        // (Opcional) Desativa o botão de alternância
-        const checkbox = document.getElementById('checkbox');
-        if (checkbox) checkbox.checked = false;
-      } else {
-        // Carrega o tema salvo normalmente
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-          document.documentElement.classList.add(savedTheme);
-          document.documentElement.setAttribute('data-theme', savedTheme);
-          switchContainer.classList.add(savedTheme);
-          switchContainer.classList.remove(savedTheme === 'dark' ? 'light' : 'dark');
-        } else {
-          document.documentElement.classList.add('light');
-          document.documentElement.setAttribute('data-theme', 'light');
-          switchContainer.classList.add('light');
-        }
+    if (switchContainer) {
+      switchContainer.classList.add('light');
+      switchContainer.classList.remove('dark');
+    }
+
+    const checkbox = document.getElementById('checkbox');
+    if (checkbox) checkbox.checked = false;
+  } else {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.classList.add(savedTheme);
+      document.documentElement.setAttribute('data-theme', savedTheme);
+
+      if (switchContainer) {
+        switchContainer.classList.add(savedTheme);
+        switchContainer.classList.remove(savedTheme === 'dark' ? 'light' : 'dark');
       }
-    };
+    } else {
+      document.documentElement.classList.add('light');
+      document.documentElement.setAttribute('data-theme', 'light');
+
+      if (switchContainer) {
+        switchContainer.classList.add('light');
+      }
+    }
+  }
+};
 
   </script>
 
