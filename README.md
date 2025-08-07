@@ -5,6 +5,7 @@ Membros Temporada 2024-2025:
   - Luiz Otávio Siqueira
 
 Premiações e Reconhecimentos (2024-2025):
+
 • 🥈 Vice-campeões Regionais – OBR 2024
 
 • 🥇 Campeões Estaduais (São Paulo) – OBR 2024
