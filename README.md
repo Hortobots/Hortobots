@@ -2,7 +2,7 @@
 [FLL] Membros Temporada 2025-2026: FLLC UNEARTHED
 -
 
-|SESI HORTOBOTS:
+| SESI HORTOBOTS:
   - Alice Haiter 
   - Giovanna Siqueira Barrichello 
   - Leandro de Oliveira Santos 
@@ -10,7 +10,7 @@
   - Olavo Grolli de Souza Moraes
   - Vitor Emanuel da Silva Nonato
 
-|UNDER CONSTRUCTION:
+| UNDER CONSTRUCTION:
   - a
   - a
   - a
