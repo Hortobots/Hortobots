@@ -10,10 +10,10 @@
   - Vitor Emanuel da Silva Nonato
 
 |UNDER CONSTRUCTION:
-    - 
-    -
-    -
-    -
+  - 
+  -
+  -
+  -
 
   *Mentores*:
   - Giovanna Rodrigues dos Santos 
