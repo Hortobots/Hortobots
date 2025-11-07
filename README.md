@@ -2,39 +2,39 @@
 [FLL] Membros Temporada 2025-2026: FLLC UNEARTHED
 
   [EQUIPE] SESI HORTOBOTS:
-    - Alice Haiter 
-    - Giovanna Siqueira Barrichello 
-    - Leandro de Oliveira Santos 
-    - Mariana Letícia Cunha Cerqueira
-    - Olavo Grolli de Souza Moraes
-    - Vitor Emanuel da Silva Nonato
-
-  [EQUIPE] UNDER CONSTRUCTION :
-    - 
-    -
-    -
-    -
+  - Alice Haiter 
+  - Giovanna Siqueira Barrichello 
+  - Leandro de Oliveira Santos 
+  - Mariana Letícia Cunha Cerqueira
+  - Olavo Grolli de Souza Moraes
+  - Vitor Emanuel da Silva Nonato
+  
+  [EQUIPE] UNDER CONSTRUCTION:
+  - 
+  -
+  -
+  -
 
   *Mentores*:
-    - Giovanna Rodrigues dos Santos 
-    - Nycolas Queiroz Gimenez (https://github.com/NycolasQG-DEV)
-    - Pedro Silva Martins 
-    - Talita Rodrigues Marcelino 
-    - Tiago Ferreira Gregório (https://github.com/TiagoFG-DEV)
+  - Giovanna Rodrigues dos Santos 
+  - Nycolas Queiroz Gimenez (https://github.com/NycolasQG-DEV)
+  - Pedro Silva Martins 
+  - Talita Rodrigues Marcelino 
+  - Tiago Ferreira Gregório (https://github.com/TiagoFG-DEV)
 
   *Técnico*:
-    - Everaldo de Jesus Leal Filho
+  - Everaldo de Jesus Leal Filho
 
 --------------------------------------------------------------------------
-  [OBR] Membros Temporada 2025-2026:
-    - Nycolas Queiroz Gimenez (https://github.com/NycolasQG-DEV)
-    - Tiago Ferreira Gregório (https://github.com/TiagoFG-DEV)
-    - Giovanna Rodrigues dos Santos
-    - Talita Rodrigues Marcelino
+[OBR] Membros Temporada 2025-2026:
+  - Nycolas Queiroz Gimenez (https://github.com/NycolasQG-DEV)
+  - Tiago Ferreira Gregório (https://github.com/TiagoFG-DEV)
+  - Giovanna Rodrigues dos Santos
+  - Talita Rodrigues Marcelino
 
   *Técnicos*:
-    - Everaldo de Jesus Leal Filho
-    - Pedro Silva Martins
+  - Everaldo de Jesus Leal Filho
+  - Pedro Silva Martins
 
   Premiações e Reconhecimentos (2025-2026):
   • 🥇 Campeões Regionais – OBR 2025
