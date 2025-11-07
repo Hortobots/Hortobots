@@ -40,7 +40,7 @@
 
 Premiações e Reconhecimentos (2025-2026):
 
-• 🥇 Campeões Regionais – OBR 2025
+  - 🥇 Campeões Regionais – OBR 2025
 
 --------------------------------------------------------------------------
 [OBR] Membros Temporada 2024-2025:
@@ -55,9 +55,9 @@ Premiações e Reconhecimentos (2025-2026):
     
 Premiações e Reconhecimentos (2024-2025):
 
-• 🥈 Vice-campeões Regionais – OBR 2024
-• 🥇 Campeões Estaduais (São Paulo) – OBR 2024
-• 🥇 Campeões Nacionais (Brasil) – OBR 2024
-• 🏆 Honra ao mérito mundial (The Best Performance) – RoboCup 2025
+  - 🥈 Vice-campeões Regionais – OBR 2024
+  - 🥇 Campeões Estaduais (São Paulo) – OBR 2024
+  - 🥇 Campeões Nacionais (Brasil) – OBR 2024
+  - 🏆 Honra ao mérito mundial (The Best Performance) – RoboCup 2025
 
 --------------------------------------------------------------------------
