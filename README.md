@@ -1,5 +1,6 @@
 --------------------------------------------------------------------------
 [FLL] Membros Temporada 2025-2026: FLLC UNEARTHED
+-
 
 |SESI HORTOBOTS:
   - Alice Haiter 
@@ -27,6 +28,7 @@
 
 --------------------------------------------------------------------------
 [OBR] Membros Temporada 2025-2026:
+-
   - Nycolas Queiroz Gimenez (https://github.com/NycolasQG-DEV)
   - Tiago Ferreira Gregório (https://github.com/TiagoFG-DEV)
   - Giovanna Rodrigues dos Santos
@@ -41,6 +43,7 @@
 
 --------------------------------------------------------------------------
 [OBR] Membros Temporada 2024-2025:
+-
   - Nycolas Queiroz Gimenez (https://github.com/NycolasQG-DEV)
   - Tiago Ferreira Gregório (https://github.com/TiagoFG-DEV)
   - Nicolas Paiva Medeiros (https://github.com/Nicolaspaiva14)
