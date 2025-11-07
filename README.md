@@ -11,10 +11,10 @@
   - Vitor Emanuel da Silva Nonato
 
 | UNDER CONSTRUCTION:
-  - a
-  - a
-  - a
-  - a
+  - Isabella Caiçara Martins
+  - Lucas Perbeline Santos
+  - Luccas Gabriel Martins da Costa
+  - Maria Eduarda da Silva Cirico
 
   *Mentores*:
   - Giovanna Rodrigues dos Santos 
