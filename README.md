@@ -1,19 +1,18 @@
 --------------------------------------------------------------------------
 [FLL] Membros Temporada 2025-2026: FLLC UNEARTHED
 
-  [EQUIPE] SESI HORTOBOTS:
-  - Alice Haiter 
-  - Giovanna Siqueira Barrichello 
-  - Leandro de Oliveira Santos 
-  - Mariana Letícia Cunha Cerqueira
-  - Olavo Grolli de Souza Moraes
-  - Vitor Emanuel da Silva Nonato
-  
-  [EQUIPE] UNDER CONSTRUCTION:
-  - 
-  -
-  -
-  -
+  |SESI HORTOBOTS:
+    - Alice Haiter 
+    - Giovanna Siqueira Barrichello 
+    - Leandro de Oliveira Santos 
+    - Mariana Letícia Cunha Cerqueira
+    - Olavo Grolli de Souza Moraes
+    - Vitor Emanuel da Silva Nonato
+  |UNDER CONSTRUCTION:
+    - 
+    -
+    -
+    -
 
   *Mentores*:
   - Giovanna Rodrigues dos Santos 
